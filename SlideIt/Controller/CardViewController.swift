@@ -22,6 +22,7 @@ class CardViewController: UIViewController {
     // UI - Storyboard
     
     @IBOutlet weak var SBTitle: UILabel!
+    @IBOutlet weak var SBDragingView: UIView!
     
 
     override func viewDidLoad() {
@@ -33,6 +34,9 @@ class CardViewController: UIViewController {
     
     // MARK: - UI COMPONENTS
     fileprivate func initializeUIConponents() {
+        
+        SBDragingView.backgroundColor = UIColor.white
+        
         SBTitle.text = "SLIDE UP"
         SBTitle.textColor = UIColor.darkGray
     }
