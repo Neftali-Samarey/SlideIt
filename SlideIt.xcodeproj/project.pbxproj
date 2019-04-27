@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		ED5876D32274E2820011741B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876D22274E2820011741B /* AppDelegate.swift */; };
-		ED5876D52274E2820011741B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876D42274E2820011741B /* ViewController.swift */; };
+		ED5876D52274E2820011741B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876D42274E2820011741B /* MasterViewController.swift */; };
 		ED5876D82274E2820011741B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5876D62274E2820011741B /* Main.storyboard */; };
 		ED5876DA2274E2840011741B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5876D92274E2840011741B /* Assets.xcassets */; };
 		ED5876DD2274E2840011741B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5876DB2274E2840011741B /* LaunchScreen.storyboard */; };
+		ED5876E92274E8930011741B /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876E82274E8930011741B /* CardViewController.swift */; };
+		ED5876EB2274E9FC0011741B /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5876EA2274E9FC0011741B /* CardViewController.xib */; };
+		ED5876ED2274EBF60011741B /* MasterViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876EC2274EBF60011741B /* MasterViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED5876CF2274E2820011741B /* SlideIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5876D22274E2820011741B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED5876D42274E2820011741B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED5876D42274E2820011741B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		ED5876D72274E2820011741B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED5876D92274E2840011741B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5876DC2274E2840011741B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5876DE2274E2840011741B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5876E82274E8930011741B /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		ED5876EA2274E9FC0011741B /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		ED5876EC2274EBF60011741B /* MasterViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				ED5876D22274E2820011741B /* AppDelegate.swift */,
-				ED5876D42274E2820011741B /* ViewController.swift */,
+				ED5876E62274E8520011741B /* Model */,
+				ED5876E52274E84A0011741B /* View */,
+				ED5876E42274E8400011741B /* Controller */,
 				ED5876D62274E2820011741B /* Main.storyboard */,
 				ED5876D92274E2840011741B /* Assets.xcassets */,
 				ED5876DB2274E2840011741B /* LaunchScreen.storyboard */,
 				ED5876DE2274E2840011741B /* Info.plist */,
 			);
 			path = SlideIt;
+			sourceTree = "<group>";
+		};
+		ED5876E42274E8400011741B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED5876D42274E2820011741B /* MasterViewController.swift */,
+				ED5876EC2274EBF60011741B /* MasterViewControllerExtension.swift */,
+				ED5876E82274E8930011741B /* CardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED5876E52274E84A0011741B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED5876EA2274E9FC0011741B /* CardViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED5876E62274E8520011741B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +157,7 @@
 			files = (
 				ED5876DD2274E2840011741B /* LaunchScreen.storyboard in Resources */,
 				ED5876DA2274E2840011741B /* Assets.xcassets in Resources */,
+				ED5876EB2274E9FC0011741B /* CardViewController.xib in Resources */,
 				ED5876D82274E2820011741B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5876D52274E2820011741B /* ViewController.swift in Sources */,
+				ED5876D52274E2820011741B /* MasterViewController.swift in Sources */,
 				ED5876D32274E2820011741B /* AppDelegate.swift in Sources */,
+				ED5876ED2274EBF60011741B /* MasterViewControllerExtension.swift in Sources */,
+				ED5876E92274E8930011741B /* CardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
