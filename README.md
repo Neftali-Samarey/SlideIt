@@ -1,9 +1,9 @@
 
 # SlideIt (Swift 4)
 
-<!--<div align = "center">-->
-<!--<img src="Screenshots/image1.png" width="700" />-->
-<!--</div>-->
+<div align = "center">
+<img src="SlideIt/Screenshots/screenshot_slideIt.png" width="700" />
+</div>
 
 
 
