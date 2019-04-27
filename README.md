@@ -2,11 +2,11 @@
 # SlideIt (Swift 4)
 
 <div align = "center">
-<img src="SlideIt/Screenshots/screenshot_slideIt.png" width="700" />
+<img src="SlideIt/Screenshots/screenshot_slideIt.png" width="340" />
 </div>
 
 
 
-## Item
+## Working Sample project
 
-#### Item
+
